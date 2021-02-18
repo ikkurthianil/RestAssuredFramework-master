@@ -6,9 +6,33 @@
       <class name="studentApiTest.PutAPITest">
         <methods>
           <include name="baseTest"/>
+          <include name="putProduct"/>
           <include name="putVendor"/>
         </methods>
       </class> <!-- studentApiTest.PutAPITest -->
+      <class name="studentApiTest.PostAPITest">
+        <methods>
+          <include name="postVendor"/>
+          <include name="baseTest"/>
+          <include name="productpostVendor"/>
+          <include name="postCustomer"/>
+        </methods>
+      </class> <!-- studentApiTest.PostAPITest -->
+      <class name="studentApiTest.GetAPITests">
+        <methods>
+          <include name="getAllProducts"/>
+          <include name="baseTest"/>
+          <include name="getSingleVendor"/>
+          <include name="getSingleCustomer"/>
+          <include name="getSingleProduct"/>
+          <include name="getCompanyName"/>
+          <include name="getItemDetails"/>
+          <include name="getVendorDetails"/>
+          <include name="getAllCustomers"/>
+          <include name="getSingleItem"/>
+          <include name="getAllVendors"/>
+        </methods>
+      </class> <!-- studentApiTest.GetAPITests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -14,12 +14,14 @@ public class FileandEnv {
 	public static Map<String, String> envAndFile() {
 
 		String environment = System.getProperty("env");
+		
 
 		try {
 			if (environment.equalsIgnoreCase("dev")) {
 
 				FileInputStream fisDev = new FileInputStream("D:\\RestAssuredFramework-master\\inputs\\dev.txt");
 				propMain.load(fisDev);
+				fileandenv.put("dev", propMain.getProperty("dev"));
 				fileandenv.put("ServerUrl", propMain.getProperty("ServerUrl"));
 				fileandenv.put("portNo", propMain.getProperty("portNo"));
 				fileandenv.put("username", propMain.getProperty("username"));

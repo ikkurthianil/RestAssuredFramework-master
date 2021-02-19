@@ -36,7 +36,7 @@ public class SQL
 		int randomNum=0;
 		try {
 			list = new ArrayList();
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://65.0.23.226:3306/accountandinventory", "accountusr",
 					"S#5tLbS8iQs*F");
 			
